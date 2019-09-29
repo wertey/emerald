@@ -1,0 +1,11 @@
+@import "_reset";
+@import "_container";
+@import "_vars";
+@import "_header";
+@import "_fonts";
+
+body {
+  font-size: 14px;
+  color: $mainColor;
+  font-family: 'PT Sans Caption',sans-serif;
+}

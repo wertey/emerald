@@ -14,10 +14,10 @@
   "author": "https://github.com/wertey",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vedees/webpack-template.git"
+    "url": "wertey"
   },
   "bugs": {
-    "url": "https://github.com/vedees/webpack-template/issues"
+    "url": "wertey"
   },
   "keywords": [
     "webpack",
@@ -25,8 +25,7 @@
     "merge",
     "bable",
     "bable7",
-    "scss",
-    "vue"
+    "scss"
   ],
   "license": "MIT",
   "devDependencies": {
@@ -39,8 +38,6 @@
     "css-loader": "^3.0.0",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.10",
-    "eslint": "^6.1.0",
-    "eslint-loader": "^2.2.1",
     "file-loader": "^4.0.0",
     "html-webpack-plugin": "^3.2.0",
     "image-webpack-loader": "^5.0.0",
@@ -59,6 +56,6 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "vue": "^2.6.10"
+    "font-awesome": "^4.7.0"
   }
 }
