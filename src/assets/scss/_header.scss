@@ -27,14 +27,53 @@
         }
         &-phones {
           position: relative;
+          font-size: 20px;
+          padding-left: 130px;
+          padding-top: 6px;
           &:after {
             position: absolute;
-            content: '';
-            left: -20px;
             width: 20px;
             height: 20px;
+            content: "\f095";
+            font-size: 27px;
+            top: 13px;
+            left: 95px;
+            font-family: 'FontAwesome',sans-serif;
           }
+          &__tel {
+            &-link {
+              text-decoration: none;
+              color: white;
+            }
+          }
+        }
+        &-order {
+          padding-left: 30px;
+          padding-top: 10px;
+          height: 70px;
+          &__btn {
+            font-family: 'PT Sans Caption',sans-serif;
+            font-size: 18px;
+            height: 32px;
+            border: 1px solid white;
+            padding: 0 16px;
+            color: $mainColor;
+            border-radius: 15px;
+            transition: all .3s ease-in;
+            cursor: pointer;
+            &:hover {
+              background: white;
+              color: #007558;
+            }
+          }
+        }
+        &-third {
+          display: flex;
+          flex-direction: row;
         }
       }
     }
 }
+
+
+
