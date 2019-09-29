@@ -6,13 +6,16 @@
   background-size: 100% 100%;
   font-family: 'Kurale', serif;
   &-text {
-    padding-top: 500px;
+    display: flex;
+    align-items: flex-end;
+    min-height: 633px;
+    max-width: 818px;
+    margin: 0 auto 60px;
     &__info {
       font-size: 30px;
       text-align: center;
       color: $mainColor;
-      max-width: 930px;
-      margin: 0 auto 5px;
+      line-height: 35px;
     }
   }
 }

@@ -1,0 +1,15 @@
+.lp__button {
+    font-family: 'PT Sans Caption',sans-serif;
+    font-size: 18px;
+    height: 32px;
+    border: 1px solid white;
+    padding: 0 16px;
+    color: $mainColor;
+    border-radius: 15px;
+    transition: all .3s ease-in;
+    cursor: pointer;
+    &:hover {
+      background: white;
+      color: #007558;
+    }
+  }

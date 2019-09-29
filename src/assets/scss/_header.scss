@@ -1,5 +1,6 @@
 .lp-header {
-  background: $headerbgColor;
+  background: url(../img/headerbg.jpg);
+  background-size: 100%;
   width: 100%;
   height: 70px;
     &-row {
@@ -10,9 +11,11 @@
         padding-top: 10px;
         &-info {
           font-size: 16px;
+          padding-top: 5px;
           &__title {
-              font-weight: bold;
-              text-transform: uppercase;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 8px;
           }
           &__desc {
 
@@ -29,7 +32,7 @@
           position: relative;
           font-size: 20px;
           padding-left: 130px;
-          padding-top: 6px;
+          padding-top: 3px;
           &:after {
             position: absolute;
             width: 20px;
@@ -44,6 +47,8 @@
             &-link {
               text-decoration: none;
               color: white;
+              margin-bottom: 5px;
+              display: block;
             }
           }
         }
@@ -51,25 +56,51 @@
           padding-left: 30px;
           padding-top: 10px;
           height: 70px;
-          &__btn {
-            font-family: 'PT Sans Caption',sans-serif;
-            font-size: 18px;
-            height: 32px;
-            border: 1px solid white;
-            padding: 0 16px;
-            color: $mainColor;
-            border-radius: 15px;
-            transition: all .3s ease-in;
-            cursor: pointer;
-            &:hover {
-              background: white;
-              color: #007558;
-            }
-          }
         }
         &-third {
           display: flex;
           flex-direction: row;
+        }
+        &-menu {
+          border-radius: 100%;
+          width: 50px;
+          height: 50px;
+          border: 1px solid white;
+          &__line {
+            width: 28px;
+            height: 4px;
+            background: white;
+            position: relative;
+            top: 22px;
+            left: 10px;
+            &:after {
+              width: 28px;
+              height: 4px;
+              background: white;
+              position: absolute;
+              content: '';
+              top: -10px;
+            }
+            &:before {
+              width: 28px;
+              height: 4px;
+              background: white;
+              position: absolute;
+              content: '';
+              top: 10px;
+            }
+          }
+        }
+        &__first {
+          display: flex;
+          flex-direction: row;
+        }
+        &__text {
+          font-size: 18px;
+          padding-top: 16px;
+          padding-left: 18px;
+          padding-right: 18px;
+          width: 180px;
         }
       }
     }
