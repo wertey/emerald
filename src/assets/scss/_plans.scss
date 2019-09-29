@@ -1,0 +1,70 @@
+@import "_variables";
+
+.lp {
+  &-plans {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+    &__title {
+      font-size: 36px;
+      line-height: 51px;
+      font-weight: bold;
+    }
+    &__subtitle {
+      font-size: 16px;
+      line-height: 28px;
+      max-width: 60%;
+      margin: 0 auto;
+    }
+    &-section {
+      margin-top: 110px;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+      }
+      &__item {
+        flex: 1;
+        min-width: 370px;
+        padding: 60px 45px;
+        @media screen and (max-width: 767px) {
+          min-width: 100%;
+          padding: 50px 20px;
+        }
+        &_title {
+          font-size: 14px;
+          line-height: 17px;
+          text-transform: uppercase;
+          font-weight: bold;
+          margin-bottom: 26px;
+        }
+        &_price {
+          margin-bottom: 26px;
+        }
+        &_desc {
+          font-size: 16px;
+          line-height: 28px;
+          font-weight: 300;
+          margin-bottom: 24px;
+        }
+        &_button {
+
+        }
+        &_active {
+          background: $color-polar;
+        }
+      }
+    }
+    &__price {
+      color: $color-brilliant-Rose;
+      font-size: 72px;
+      font-weight: bold;
+      line-height: 86px;
+    }
+    &__month {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}

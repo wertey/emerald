@@ -1,0 +1,29 @@
+@import "_variables";
+
+.lp {
+  &__button {
+    font-size: 18px;
+    @include font-montserrat;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 15px 20px;
+    background: linear-gradient(to right, $color-atomic_tangerine, $color-brilliant-Rose);
+    color: $color-white;
+    cursor: pointer;
+    &:hover {
+      background: linear-gradient(to right, $color-brilliant-Rose, $color-atomic_tangerine);
+    }
+    &-bordered {
+      border: 1px solid $color-black;
+      background: none;
+      color: $color-black;
+      transition: all .2s ease-in;
+      &:hover {
+        border: 1px solid $color-atomic_tangerine;
+        color: $color-brilliant-Rose;
+        background: none;
+      }
+    }
+  }
+}

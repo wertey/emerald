@@ -1,0 +1,40 @@
+@import "_variables";
+
+.lp {
+  &-free {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: linear-gradient(to right, $color-atomic_tangerine, $color-brilliant-Rose);
+    color: $color-white;
+    text-align: center;
+    &__title {
+      font-size: 55px;
+      line-height: 60px;
+      font-weight: bold;
+      margin-bottom: 26px;
+      @media screen and (max-width: 767px) {
+        font-size: 50px;
+        line-height: 50px;
+      }
+    }
+    &__desc {
+      font-size: 20px;
+      line-height: 30px;
+      @include font-montserrat;
+      width: 70%;
+      margin: 0 auto 40px;
+      @media screen and (max-width: 767px) {
+        margin: 0 0 40px 0;
+        width: 100%;
+      }
+    }
+    &__button {
+      background: $color-white;
+      border: none;
+      &:hover {
+        border: none;
+        background: $color-white;
+      }
+    }
+  }
+}
