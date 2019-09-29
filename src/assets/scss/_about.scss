@@ -29,6 +29,21 @@
         width: 45%;
         padding-right: 40px;
       }
+      &-instagram {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        &__icon {
+          margin-right: 10px;
+        }
+        &__hashtag {
+          color: $secondColor;
+          font-family: 'PT Sans Caption',sans-serif;
+          font-weight: bold;
+          font-size: 24px;
+        }
+      }
     }
   }
 }
