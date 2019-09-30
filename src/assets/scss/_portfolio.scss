@@ -1,0 +1,25 @@
+.lp-portfolio {
+  padding-top: 70px;
+  width: 100%;
+  background: url(../img/portfolio.jpg)no-repeat;
+  background-size: 100%;
+  &__title {
+    color: #00644b;
+    font-size: 42px;
+    font-family: 'Kurale', serif;
+    text-align: center;
+  }
+  &-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 0;
+    &__item {
+      border: 1px solid red;
+      height: 230px;
+      &_first {
+        grid-area: 1/4;
+      }
+    }
+  }
+}

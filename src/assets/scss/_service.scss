@@ -1,0 +1,141 @@
+.lp-service {
+  width: 100%;
+  background: url(../img/servicebg.jpg)no-repeat;
+  background-size: 100%;
+  height: 800px;
+  color: $mainColor;
+  padding-top: 60px;
+  &__title {
+    font-size: 42px;
+    font-family: 'Kurale', serif;
+    text-align: center;
+  }
+  &-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    &__item {
+      width: 40%;
+      height: 200px;
+      &-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      &-text {
+        font-size: 17px;
+        padding-right: 22px;
+      }
+      &_center {
+        width: 33%;
+        height: 200px;
+      }
+      &_ogranization {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        width: 230px;
+        position: relative;
+        &:before {
+          position: absolute;
+          content: '';
+          left: -187px;
+          width: 165px;
+          height: 165px;
+          background: url(../img/service1.png);
+        }
+      }
+      &_master {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        width: 230px;
+        position: relative;
+        &:before {
+          position: absolute;
+          content: '';
+          left: -187px;
+          width: 165px;
+          height: 165px;
+          background: url(../img/service2.png);
+        }
+      }
+      &_photographer {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        width: 230px;
+        position: relative;
+        &:before {
+          position: absolute;
+          content: '';
+          left: -177px;
+          width: 165px;
+          height: 165px;
+          background: url(../img/service3.png);
+        }
+      }
+      &_decor {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        width: 230px;
+        position: relative;
+        &:before {
+          position: absolute;
+          content: '';
+          left: -177px;
+          width: 165px;
+          height: 165px;
+          background: url(../img/service4.png);
+        }
+      }
+      &_banket {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        width: 230px;
+        position: relative;
+        &:before {
+          position: absolute;
+          content: '';
+          left: -177px;
+          width: 165px;
+          height: 165px;
+          background: url(../img/service5.png);
+        }
+      }
+      &_sign {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        width: 230px;
+        position: relative;
+        &:before {
+          position: absolute;
+          content: '';
+          left: -187px;
+          width: 165px;
+          height: 165px;
+          background: url(../img/service6.png);
+        }
+      }
+      &_artist {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        width: 230px;
+        position: relative;
+        &:before {
+          position: absolute;
+          content: '';
+          left: -187px;
+          width: 165px;
+          height: 165px;
+          background: url(../img/service7.png);
+        }
+      }
+    }
+  }
+}
