@@ -3,6 +3,10 @@
   width: 100%;
   background: url(../img/portfolio.jpg)no-repeat;
   background-size: 100%;
+  &__container {
+    max-width: 975px;
+    margin: 0 auto;
+  }
   &__title {
     color: #00644b;
     font-size: 42px;
@@ -12,13 +16,46 @@
   &-grid {
     margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 0;
+    grid-template-columns: repeat(8,1fr);
+    grid-auto-rows: minmax(115px,1fr);
     &__item {
       border: 1px solid red;
       height: 230px;
       &_first {
-        grid-area: 1/4;
+        grid-column: 1 / 5;
+      }
+      &_second {
+        grid-column: 5 / 7;
+      }
+      &_third {
+        grid-column: 7 / 9;
+      }
+      &_fifth {
+        grid-column: 1 / 3;
+      }
+      &_sixth {
+        grid-column: 3 / 7;
+      }
+      &_seventh {
+        grid-column: 7 / 9;
+        grid-row: 2 / 4;
+        height: 460px;
+      }
+      &_eighth {
+        grid-column: 1 / 5;
+      }
+      &_nineth {
+        grid-column: 5 / 7;
+      }
+      &_tenth {
+        grid-column: 1 / 5;
+      }
+      &_eleventh {
+        grid-column: 5 / 7;
+      }
+      &_twelfth {
+        grid-column: 7 / 9;
       }
     }
   }
