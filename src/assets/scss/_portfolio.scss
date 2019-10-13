@@ -20,8 +20,41 @@
     grid-template-columns: repeat(8,1fr);
     grid-auto-rows: minmax(115px,1fr);
     &__item {
-      border: 1px solid red;
       height: 230px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      &-info {
+        opacity: 0;
+        background: $portfolioHoverBg;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: right;
+        padding: 15px 45px 15px 0;
+        transition: opacity .5s ease-in;
+        z-index: 10;
+      }
+      &-icon {
+        position: absolute;
+        right: 8px;
+        width: 27px;
+        height: 27px;
+        background: $portfolioHoverBg;
+        border-radius: 100%;
+        border: 1px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 11;
+        bottom: 8px;
+        font-size: 18px;
+      }
+      &-img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
       &_first {
         grid-column: 1 / 5;
       }
@@ -56,6 +89,9 @@
       }
       &_twelfth {
         grid-column: 7 / 9;
+      }
+      &:hover &-info {
+        opacity: 1;
       }
     }
   }
