@@ -1,0 +1,136 @@
+.lp-team {
+  width: 100%;
+  background: url(../img/teambg.png)no-repeat;
+  padding-bottom: 65px;
+  height: 1118px;
+  overflow: hidden;
+  padding-top: 80px;
+  position: relative;
+  z-index: 9;
+  margin-top: -20px;
+  &__title {
+    color: $portfolioHoverBg;
+    padding-top: 45px;
+  }
+  &__bg {
+    background: url(../img/line-bg-2.png)no-repeat;
+    min-height: 1134px;
+    margin-top: -66px;
+  }
+  &-leader {
+    padding-left: 200px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'PTSans Caption',sans-serif;
+    color: $portfolioHoverBg;
+    &__info {
+      padding-top: 35px;
+      padding-left: 25px;
+      max-width: 460px;
+      width: 100%;
+      &-fio {
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+      &-seo {
+        margin-bottom: 10px;
+      }
+      &-desc {
+        margin-top: 20px;
+        font-style: italic;
+      }
+    }
+    &-bg {
+      &__lead {
+        background: url(../img/leader.jpg);
+        width: 270px;
+        height: 270px;
+        border-radius: 100%;
+        border: 2px solid $portfolioHoverBg;
+        overflow: hidden;
+      }
+    }
+  }
+  &-item {
+    position: absolute;
+    color: $portfolioHoverBg;
+    font-size: 18px;
+    line-height: 100%;
+    max-width: 300px;
+    text-align: center;
+    &__fio {
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    &__pos {
+      font-size: 16px;
+      max-width: 205px;
+    }
+    &-team1 {
+      left: 20%;
+      top: 35%;
+    }
+    &-team2 {
+      left: 35%;
+      top: 38%;
+    }
+    &-team3 {
+      left: 49%;
+      top: 34%;
+    }
+    &-team4 {
+      left: 63%;
+      top: 40%;
+    }
+    &-team5 {
+      left: 22%;
+      top: 69%;
+    }
+    &-team6 {
+      left: 35%;
+      top: 71%;
+    }
+    &-team7 {
+      left: 49%;
+      top: 66%;
+    }
+    &-team8 {
+      left: 62%;
+      top: 72%;
+    }
+    &__img {
+      width: 176px;
+      height: 176px;
+      border-radius: 50%;
+      border: 2px solid $portfolioHoverBg;
+      overflow: hidden;
+      margin: 0 auto 20px;
+      &_team1 {
+        background: url(../img/seo2.jpg);
+      }
+      &_team2 {
+        background: url(../img/team1.jpg);
+      }
+      &_team3 {
+        background: url(../img/team2.jpg);
+      }
+      &_team4 {
+        background: url(../img/team3.jpg);
+      }
+      &_team5 {
+        background: url(../img/team4.jpg);
+      }
+      &_team6 {
+        background: url(../img/team5.jpg);
+      }
+      &_team7 {
+        background: url(../img/team6.jpg);
+      }
+      &_team8 {
+        background: url(../img/team7.jpg);
+      }
+    }
+  }
+}

@@ -5,6 +5,8 @@
   background-size: 100%;
   min-height: 900px;
   margin-top: -25px;
+  position: relative;
+  z-index: 10;
   &__title {
     margin-bottom: 20px;
   }
