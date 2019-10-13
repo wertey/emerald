@@ -1,0 +1,126 @@
+.lp-price {
+  padding-top: 60px;
+  width: 100%;
+  background: url(../img/pricebg.png)no-repeat;
+  background-size: 100%;
+  min-height: 900px;
+  margin-top: -25px;
+  &__title {
+    margin-bottom: 20px;
+  }
+  &-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-family: 'PTSans Caption',sans-serif;
+    &__item {
+      width: 33%;
+      border-radius: 10px;
+      background: #fff;
+      min-width: 360px;
+      padding-top: 11px;
+      padding-bottom: 30px;
+      padding-left: 38px;
+      padding-right: 38px;
+      color: $portfolioHoverBg;
+      text-align: center;
+      font-weight: bold;
+      & + & {
+        margin-left: 30px;
+      }
+      &-title {
+        position: relative;
+        font-size: 24px;
+        line-height: 27px;
+        text-transform: uppercase;
+        max-width: 200px;
+        margin: 0 auto;
+        &:after {
+          position: absolute;
+          content: '';
+          width: 260px;
+          height: 2px;
+          background: $portfolioHoverBg;
+          bottom: -10px;
+          left: -29px;
+        }
+        &_premium {
+          max-width: 300px;
+          &:after {
+            position: absolute;
+            content: '';
+            width: 260px;
+            height: 2px;
+            background: $portfolioHoverBg;
+            bottom: -10px;
+            left: 18px;
+          }
+        }
+      }
+      &-desc {
+        max-width: 250px;
+        margin: 20px auto;
+        line-height: 20px;
+        &_bold {
+          font-size: 16px;
+        }
+      }
+      &-list {
+        margin-bottom: 24px;
+        & li {
+          margin-bottom: 11px;
+          line-height: 20px;
+        }
+        &_italic {
+          font-style: italic;
+        }
+        &_bold {
+          font-size: 24px;
+        }
+        &_second {
+          margin-bottom: 75px;
+        }
+        &_first {
+          margin-bottom: 54px;
+        }
+      }
+      &-rubs {
+        min-width: 260px;
+        height: 61px;
+        background: url(../img/price-02.png)no-repeat;
+        background-position: center;
+        color: $mainColor;
+        font-size: 42px;
+        line-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  &__action {
+    text-align: center;
+    font-size: 28px;
+    line-height: 26px;
+    padding-top: 36px;
+    padding-bottom: 26px;
+    &_phone {
+      font-weight: bold;
+      font-size: 32px;
+    }
+  }
+  &-btn {
+    &__button {
+      padding-left: 6px;
+      padding-right: 6px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 260px;
+      margin: 0 auto;
+      height: 51px;
+      border-radius: 22px;
+    }
+  }
+}
