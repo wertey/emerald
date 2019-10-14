@@ -1,0 +1,85 @@
+.lp-review {
+  width: 100%;
+  background: url(../img/reviewbg.jpg)no-repeat;
+  min-height: 901px;
+  position: relative;
+  margin-top: -53px;
+  padding-top: 70px;
+  &__title {
+    margin-bottom: 30px;
+  }
+  &-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &__item {
+      background: $mainColor;
+      border-radius: 10px;
+      padding: 33px 20px 39px;
+      display: flex !important;
+      justify-content: flex-start;
+      flex-direction: row;
+      align-items: flex-start;
+      min-height: 315px;
+      color: $portfolioHoverBg;
+      min-width: 550px;
+      margin-bottom: 20px;
+      background-color: #fff;
+      background-image: url(../img/reviewbgg.jpg);
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      &-feedback {
+        width: 425px;
+        font-size: 15px;
+        padding-left: 20px;
+        line-height: 16px;
+      }
+      &-text {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 24px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+      }
+      &-year {
+        font-size: 20px;
+      }
+      &-img {
+        width: 150px;
+        text-align: center;
+        & img {
+          max-width: 150px;
+          height: 150px;
+          border-radius: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+.slick-next, .slick-prev {
+  top: 48%;
+}
+
+.slick-prev {
+  left: -54px;
+}
+
+.slick-dots li button {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 100px;
+  border: 1px solid white;
+}
+
+.slick-dots li button:before {
+  content: '';
+}
+
+.slick-dots.lp-review-slider__dots .slick-active {
+  background: white;
+  border-radius: 100px;
+}

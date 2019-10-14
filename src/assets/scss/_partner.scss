@@ -3,6 +3,8 @@
   background: url(../img/infobg.png)no-repeat;
   padding-top: 70px;
   padding-bottom: 70px;
+  position: relative;
+  z-index: 10;
   &__container {
     max-width: 950px;
     margin: 0 auto;
