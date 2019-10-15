@@ -36,6 +36,8 @@ q {
     content: none;
   }
 }
+input::placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::placeholder {opacity: 0; transition: opacity 0.3s ease;}
 
 table {
   border-collapse: collapse;

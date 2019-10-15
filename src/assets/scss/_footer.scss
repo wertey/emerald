@@ -1,0 +1,87 @@
+.lp-footer {
+  width: 100%;
+  background: $footerbg;
+  min-height: 190px;
+  padding-bottom: 20px;
+  &-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &__item {
+      width: 33%;
+      color: $copyrightColorText;
+      &_info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &-desc {
+        max-width: 230px;
+        font-size: 16px;
+        margin-left: 20px;
+        &_bold {
+          font-weight: bold;
+        }
+      }
+      &-phone {
+        margin-bottom: 5px;
+        font-size: 20px;
+        color: $mainColor;
+        text-align: center;
+        & > .fa-phone {
+          margin-left: -5px;
+        }
+        & a {
+          color: $mainColor;
+          text-decoration: none;
+        }
+      }
+      &-logo {
+        & img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      &-social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        &_icon {
+          width: 57px;
+          height: 57px;
+          background: $portfolioHoverBg;
+          color: $mainColor;
+          border-radius: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          transition: all .3s ease-in;
+          &:hover {
+            background: white;
+            color: $portfolioHoverBg;
+          }
+          & + & {
+            margin-left: 20px;
+          }
+          i {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  &__copyright {
+    font-size: 16px;
+    line-height: 100%;
+    color: $copyrightColorText;
+    text-align: center;
+    &_link {
+      text-decoration: underline;
+      color: $copyrightColorText;
+    }
+  }
+}
