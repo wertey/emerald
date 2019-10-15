@@ -57,6 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let menuBtn = document.querySelector('.lp-header-row-item-menu');
     let showMenu = document.querySelector('.lp-header-row-item__nav');
     let closeMenu = document.querySelector('.lp-header-row-item-menu.active');
+    let popup = document.querySelector('.lp-popup-order');
+    let orderModal = document.querySelector('.lp__button_order');
 
     menuBtn.addEventListener('click',function () {
         menuBtn.classList.add('active');
@@ -66,6 +68,10 @@ document.addEventListener("DOMContentLoaded", () => {
     closeMenu.addEventListener('click',function () {
         menuBtn.classList.remove('active');
         showMenu.style.opacity = '0';
+    });
+
+    orderModal.addEventListener('click',function () {
+        console.log(1)
     });
 
 });
