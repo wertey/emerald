@@ -8,6 +8,7 @@ import './assets/scss/core.scss'
 require('font-awesome/css/font-awesome.css');
 require('font-awesome/css/font-awesome.css');
 import $ from "jquery";
+require('jquery-mask-plugin/src/jquery.mask');
 require('slick-carousel/slick/slick.scss');
 require('slick-carousel/slick/slick-theme.scss');
 require('slick-carousel/slick/slick-theme.scss');
@@ -77,6 +78,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+
+
 $(document).ready(function() {
 
 
@@ -87,5 +90,6 @@ $(document).ready(function() {
         return false;
     });
 
+    $('.lp-popup__form-input_tel').mask('+7 (000) 000-00-00');
 
 });

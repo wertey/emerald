@@ -602,7 +602,7 @@
                     <li class="lp-form-row__text-item">Почему, стоит избегать агентства, которые работают за %?</li>
                 </ul>
             </div>
-            <form action="" class="lp-popup__form">
+            <form action="" class="lp-popup__form lp-popup__form_contact">
                 <div class="lp-popup__form-text">
                     Консультация
                     свадебного специалиста
@@ -611,11 +611,11 @@
                 </div>
                 <div class="lp-popup__form-name">
                     <i class="fa fa-user lp-popup__form-icon_user" aria-hidden="true"></i>
-                    <input class="lp-popup__form-input" type="text" placeholder="Ваше имя">
+                    <input class="lp-popup__form-input" type="text" pattern="[a-z]{1,15}" placeholder="Ваше имя">
                 </div>
                <div class="lp-popup__form-phone">
                    <i class="fa fa-phone lp-popup__form-icon_phone" aria-hidden="true"></i>
-                   <input class="lp-popup__form-input" type="tel" placeholder="Номер телефона">
+                   <input class="lp-popup__form-input lp-popup__form-input_tel" required type="tel" placeholder="Номер телефона">
                </div>
                 <button type="submit" class="lp-popup__form-submit">Получить консультацию</button>
             </form>
@@ -669,6 +669,7 @@
     </footer>
     <div class="lp-popup lp-popup-order">
         <form action="" class="lp-popup__form">
+            <div class="lp-popup__close">X</div>
             <div class="lp-popup__form-text">
                 Консультация
                 свадебного специалиста
@@ -677,14 +678,15 @@
             </div>
             <div class="lp-popup__form-name">
                 <i class="fa fa-user lp-popup__form-icon_user" aria-hidden="true"></i>
-                <input class="lp-popup__form-input" type="text" placeholder="Ваше имя">
+                <input class="lp-popup__form-input" type="text" pattern="[a-z]{1,15}" placeholder="Ваше имя">
             </div>
             <div class="lp-popup__form-phone">
                 <i class="fa fa-phone lp-popup__form-icon_phone" aria-hidden="true"></i>
-                <input class="lp-popup__form-input" type="tel" placeholder="Номер телефона">
+                <input class="lp-popup__form-input lp-popup__form-input_tel" required type="tel" placeholder="Номер телефона">
             </div>
             <button type="submit" class="lp-popup__form-submit">Оставить заявку</button>
         </form>
     </div>
+    <div class="lp-popup__overlay"></div>
 </body>
 </html>
