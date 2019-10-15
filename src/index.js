@@ -53,25 +53,39 @@ $('.lp-review-slider').slick({
     ]
 });
 
+
+
 document.addEventListener("DOMContentLoaded", () => {
     let menuBtn = document.querySelector('.lp-header-row-item-menu');
     let showMenu = document.querySelector('.lp-header-row-item__nav');
     let closeMenu = document.querySelector('.lp-header-row-item-menu.active');
     let popup = document.querySelector('.lp-popup-order');
-    let orderModal = document.querySelector('.lp__button_order');
+    let line = document.querySelector('.lp-header-row-item-menu__line');
+
 
     menuBtn.addEventListener('click',function () {
         menuBtn.classList.add('active');
         showMenu.style.opacity = '1';
+        line.classList.add('open');
     });
 
     closeMenu.addEventListener('click',function () {
         menuBtn.classList.remove('active');
+        line.classList.remove('open');
         showMenu.style.opacity = '0';
     });
 
-    orderModal.addEventListener('click',function () {
-        console.log(1)
+});
+
+$(document).ready(function() {
+
+
+    $('a[href^="#"]').click(function(){
+//Сохраняем значение атрибута href в переменной:
+        var target = $(this).attr('href');
+        $('html, body').animate({scrollTop: $(target).offset().top}, 800);
+        return false;
     });
+
 
 });

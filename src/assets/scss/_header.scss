@@ -89,6 +89,16 @@
               content: '';
               top: 10px;
             }
+            &.open {
+              transform: rotate(45deg);
+              &:after {
+                display: none;
+              }
+              &:before {
+                transform: rotate(-90deg);
+                top: 1px;
+              }
+            }
           }
         }
         &__first {
@@ -106,7 +116,7 @@
         &__nav {
           position: absolute;
           opacity: 0;
-          transition: opacity .5s ease-in;
+          transition: all .5s ease-in;
           left: -50px;
           top: 66px;
           display: flex;
@@ -126,6 +136,7 @@
             min-width: 220px;
             font-size: 16px;
             width: 100%;
+            color: $portfolioHoverBg;
             border-bottom: 1px solid $portfolioHoverBg;
             &:hover {
               background: $portfolioHoverBg;
