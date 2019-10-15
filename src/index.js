@@ -52,3 +52,20 @@ $('.lp-review-slider').slick({
         },
     ]
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    let menuBtn = document.querySelector('.lp-header-row-item-menu');
+    let showMenu = document.querySelector('.lp-header-row-item__nav');
+    let closeMenu = document.querySelector('.lp-header-row-item-menu.active');
+
+    menuBtn.addEventListener('click',function () {
+        menuBtn.classList.add('active');
+        showMenu.style.opacity = '1';
+    });
+
+    closeMenu.addEventListener('click',function () {
+        menuBtn.classList.remove('active');
+        showMenu.style.opacity = '0';
+    });
+
+});

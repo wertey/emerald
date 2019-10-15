@@ -101,6 +101,37 @@
           padding-left: 18px;
           padding-right: 18px;
           width: 180px;
+          position: relative;
+        }
+        &__nav {
+          position: absolute;
+          opacity: 0;
+          transition: opacity .5s ease-in;
+          left: -50px;
+          top: 66px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          &-link {
+            text-decoration: none;
+            display: flex;
+            background: $mainColor;
+            transition: all .4s ease-in;
+            box-sizing: border-box;
+            height: 51px;
+            padding: 0 20px;
+            justify-content: flex-start;
+            align-items: center;
+            min-width: 220px;
+            font-size: 16px;
+            width: 100%;
+            border-bottom: 1px solid $portfolioHoverBg;
+            &:hover {
+              background: $portfolioHoverBg;
+              color: $mainColor;
+            }
+          }
         }
       }
     }
