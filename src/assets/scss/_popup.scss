@@ -1,6 +1,6 @@
 .lp-popup {
   &-order {
-    display: flex;
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -65,6 +65,7 @@
     bottom: 0;
     right: 0;
     z-index: 100;
+    display: none;
   }
   &__close {
     background: $portfolioHoverBg;
@@ -88,8 +89,24 @@
       color: $portfolioHoverBg;
     }
   }
+  &__success {
+    background: $mainColor;
+    text-align: center;
+    display: none;
+    &-text {
+      color: $portfolioHoverBg;
+      font-size: 28px;
+      &_bold {
+        font-weight: bold;
+      }
+    }
+  }
 }
 
 input:invalid {
   border-color: #DD2C00;
+}
+
+.active {
+  opacity: 1;
 }

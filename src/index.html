@@ -285,7 +285,7 @@
                 Подробная консультация по телефону:  <span class="lp-price__action_phone">+7 (495) 195-57-22</span>  или оставьте заявку
             </div>
             <div class="lp-price-btn">
-                <div class="lp__button lp-price-btn__button">Оставь заявку</div>
+                <div class="lp__button lp__button_order lp-price-btn__button">Оставь заявку</div>
             </div>
         </div>
     </section>
@@ -583,7 +583,7 @@
             или заполните форму на следующем экране
         </div>
         <div class="lp-project__icon">
-            <img src="assets/img/arrow.jpg" alt="">
+            <a href="#contact"><img src="assets/img/arrow.jpg" alt=""></a>
         </div>
     </div>
 </section>
@@ -617,7 +617,7 @@
                    <i class="fa fa-phone lp-popup__form-icon_phone" aria-hidden="true"></i>
                    <input class="lp-popup__form-input lp-popup__form-input_tel" required type="tel" placeholder="Номер телефона">
                </div>
-                <button type="submit" class="lp-popup__form-submit">Получить консультацию</button>
+                <button type="button" class="submit lp-popup__form-submit">Получить консультацию</button>
             </form>
         </div>
     </div>
@@ -668,25 +668,34 @@
         </div>
     </footer>
     <div class="lp-popup lp-popup-order">
-        <form action="" class="lp-popup__form">
-            <div class="lp-popup__close">X</div>
-            <div class="lp-popup__form-text">
-                Консультация
-                свадебного специалиста
-                с опытом организации
-                более 200 свадеб!
+        <form action="" name="order" class="lp-popup__form">
+            <div class="close lp-popup__close">X</div>
+            <div class="lp-popup__before">
+                <div class="lp-popup__form-text">
+                    Консультация
+                    свадебного специалиста
+                    с опытом организации
+                    более 200 свадеб!
+                </div>
+                <div class="lp-popup__form-name">
+                    <i class="fa fa-user lp-popup__form-icon_user" aria-hidden="true"></i>
+                    <input class="lp-popup__form-input" name="name" type="text" pattern="[a-z]{1,15}" placeholder="Ваше имя">
+                </div>
+                <div class="lp-popup__form-phone">
+                    <i class="fa fa-phone lp-popup__form-icon_phone" aria-hidden="true"></i>
+                    <input name="tel" class="lp-popup__form-input lp-popup__form-input_tel" required type="tel" placeholder="Номер телефона">
+                </div>
+                <button  class="submit lp-popup__form-submit">Оставить заявку</button>
             </div>
-            <div class="lp-popup__form-name">
-                <i class="fa fa-user lp-popup__form-icon_user" aria-hidden="true"></i>
-                <input class="lp-popup__form-input" type="text" pattern="[a-z]{1,15}" placeholder="Ваше имя">
+            <div class="lp-popup__success">
+                <img src="assets/img/bike.jpg" alt="" class="lp-popup__success-img">
+                <div class="lp-popup__success-text lp-popup__success-text_bold">Ваша заявки принята!</div>
+                <div class="lp-popup__success-text">В ближайшее время
+                    мы с вами свяжемся.</div>
             </div>
-            <div class="lp-popup__form-phone">
-                <i class="fa fa-phone lp-popup__form-icon_phone" aria-hidden="true"></i>
-                <input class="lp-popup__form-input lp-popup__form-input_tel" required type="tel" placeholder="Номер телефона">
-            </div>
-            <button type="submit" class="lp-popup__form-submit">Оставить заявку</button>
         </form>
+
     </div>
-    <div class="lp-popup__overlay"></div>
+    <div class="close lp-popup__overlay"></div>
 </body>
 </html>
