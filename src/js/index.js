@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let submitForm = document.querySelector('.lp-popup__form-submit');
     let successOrder = document.querySelector('.lp-popup__success');
     let beforeOrderContent = document.querySelector('.lp-popup__before');
+    let name = document.querySelector('.name');
+    let phone = document.querySelector('.phone');
 
     for (let i = 0; i < orderBtn.length; i++) {
         orderBtn[i].onclick = function () {
@@ -34,7 +36,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
+    name.addEventListener('change',function (e) {
+        localStorage.setItem('name',e.target.value);
+    });
 
+    name.getAttribute('value',localStorage.getItem('name'))
+
+    phone.addEventListener('change',function (e) {
+        localStorage.setItem('phone',e.target.value);
+    });
+
+    phone.getAttribute('value',localStorage.getItem('phone'))
 
 
 });
