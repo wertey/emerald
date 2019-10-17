@@ -25,11 +25,9 @@ $('.lp-review-slider').slick({
     dotsClass: 'slick-dots lp-review-slider__dots',
     responsive: [
         {
-            breakpoint: 1025,
+            breakpoint: 1199,
             settings: {
-                slidesToShow: 3,
-                centerMode: true,
-                centerPadding: '20px',
+                slidesToShow: 1,
                 infinite: true,
                 dots: true
             }

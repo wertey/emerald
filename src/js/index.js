@@ -14,21 +14,18 @@ document.addEventListener("DOMContentLoaded", () => {
     let beforeOrderContent = document.querySelector('.lp-popup__before');
     let name = document.querySelector('.name');
     let phone = document.querySelector('.phone');
-
     for (let i = 0; i < orderBtn.length; i++) {
         orderBtn[i].onclick = function () {
             popup.style.display = 'flex';
             popupOverlay.style.display = 'block';
         };
     }
-
     for (let i = 0; i < closeBtns.length; i++) {
         closeBtns[i].onclick = function () {
             popup.style.display = 'none';
             popupOverlay.style.display = 'none';
         };
     }
-
     menuBtn.addEventListener('click',function () {
         menuBtn.classList.toggle('active');
         showMenu.classList.toggle('active');
@@ -36,9 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
 document.addEventListener("DOMContentLoaded", function (key) { // событие загрузки страницы
-
     document.querySelectorAll('.name, .phone').forEach(function(e) {
         if(e.classList.contains('name')) {
             e.value = window.sessionStorage.getItem(e.name, e.value);
@@ -53,5 +48,4 @@ document.addEventListener("DOMContentLoaded", function (key) { // событие
             })
         }
     })
-
 });

@@ -1,14 +1,16 @@
 .lp-banner {
   width: 100%;
-  background: url(../img/mainbg.jpg);
-  min-height: 680px;
+  background: url(../img/mainbg.jpg)no-repeat;
+  min-height: 750px;
   height: 100%;
-  background-size: 100% 100%;
+  background-size: 100%;
+  position: relative;
+  z-index: 11;
   font-family: 'Kurale', serif;
   &-text {
     display: flex;
     align-items: flex-end;
-    min-height: 633px;
+    min-height: 670px;
     max-width: 818px;
     margin: 0 auto 60px;
     &__info {

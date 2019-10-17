@@ -1,9 +1,16 @@
 .lp-about {
   padding-top: 90px;
   padding-bottom: 60px;
+  position: relative;
+  z-index: 10;
   &-row {
     display: flex;
     flex-direction: row;
+    @media screen and (max-width: 1100px) {
+      &  {
+        flex-wrap: wrap;
+      }
+    }
     &-item {
       &__title {
         font-family: 'Kurale', serif;
@@ -25,10 +32,26 @@
       &-info {
         width: 45%;
         padding-left: 40px;
+        @media screen and (max-width: 1100px) {
+          & {
+            width: 100%;
+            padding-left: 0;
+          }
+        }
       }
       &-movie {
         width: 45%;
         padding-right: 40px;
+        @media screen and (max-width: 1100px) {
+          & {
+            width: 100%;
+            padding-right: 0;
+            padding-bottom: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
       }
       &-instagram {
         display: flex;

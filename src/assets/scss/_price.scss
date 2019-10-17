@@ -2,7 +2,7 @@
   padding-top: 60px;
   width: 100%;
   background: url(../img/pricebg.png)no-repeat;
-  background-size: 100%;
+  background-size: cover;
   min-height: 900px;
   margin-top: -25px;
   position: relative;
@@ -15,6 +15,11 @@
     justify-content: center;
     flex-direction: row;
     font-family: 'PTSans Caption',sans-serif;
+    @media screen and (max-width: 1100px) {
+       & {
+         flex-wrap: wrap;
+       }
+    }
     &__item {
       width: 33%;
       border-radius: 10px;
@@ -27,6 +32,20 @@
       color: $portfolioHoverBg;
       text-align: center;
       font-weight: bold;
+      @media screen and (max-width: 1100px) {
+         & {
+           width: 45%;
+         }
+        &:last-child {
+          margin-top: 20px;
+        }
+        &:first-child {
+          margin-right: 10px;
+        }
+        &.lp-price-row__item {
+          margin-left: 10px;
+        }
+      }
       & + & {
         margin-left: 30px;
       }
