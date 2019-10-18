@@ -2,9 +2,10 @@
   width: 100%;
   background: url(../img/servicebg.jpg)no-repeat;
   background-size: cover;
-  height: 800px;
+  min-height: 800px;
   color: $mainColor;
   padding-top: 60px;
+  padding-bottom: 60px;
   &-row {
     display: flex;
     flex-direction: row;
@@ -14,6 +15,16 @@
     &__item {
       width: 40%;
       height: 200px;
+      @media screen and (max-width: 1200px) {
+        & {
+          width: 50%;
+        }
+      }
+      @media screen and (max-width: 1023px) {
+        & {
+          width: 100%;
+        }
+      }
       &-title {
         font-size: 24px;
         margin-bottom: 10px;
@@ -32,6 +43,14 @@
         margin-left: auto;
         width: 230px;
         position: relative;
+        @media screen and (max-width: 1023px) {
+          & {
+            max-width: 550px;
+            width: 100%;
+            margin-top: 50px;
+            justify-content: center;
+          }
+        }
         &:before {
           position: absolute;
           content: '';
@@ -39,6 +58,13 @@
           width: 165px;
           height: 165px;
           background: url(../img/service1.png);
+          @media screen and (max-width: 520px) {
+            & {
+              top: 40px;
+              transform: translate(-50%,-50%);
+              left: 50%;
+            }
+          }
         }
       }
       &_master {
@@ -47,6 +73,14 @@
         margin-left: auto;
         width: 230px;
         position: relative;
+        @media screen and (max-width: 1023px) {
+          & {
+            max-width: 550px;
+            width: 100%;
+            margin-top: 50px;
+            justify-content: center;
+          }
+        }
         &:before {
           position: absolute;
           content: '';
@@ -54,6 +88,13 @@
           width: 165px;
           height: 165px;
           background: url(../img/service2.png);
+          @media screen and (max-width: 520px) {
+            & {
+              top: 40px;
+              transform: translate(-50%,-50%);
+              left: 50%;
+            }
+          }
         }
       }
       &_photographer {
@@ -62,6 +103,14 @@
         margin-left: auto;
         width: 230px;
         position: relative;
+        @media screen and (max-width: 1023px) {
+          & {
+            max-width: 550px;
+            width: 100%;
+            margin-top: 50px;
+            justify-content: center;
+          }
+        }
         &:before {
           position: absolute;
           content: '';
@@ -69,6 +118,13 @@
           width: 165px;
           height: 165px;
           background: url(../img/service3.png);
+          @media screen and (max-width: 520px) {
+            & {
+              top: 40px;
+              transform: translate(-50%,-50%);
+              left: 50%;
+            }
+          }
         }
       }
       &_decor {
@@ -77,6 +133,14 @@
         margin-left: auto;
         width: 230px;
         position: relative;
+        @media screen and (max-width: 1023px) {
+          & {
+            max-width: 550px;
+            width: 100%;
+            margin-top: 50px;
+            justify-content: center;
+          }
+        }
         &:before {
           position: absolute;
           content: '';
@@ -84,6 +148,13 @@
           width: 165px;
           height: 165px;
           background: url(../img/service4.png);
+          @media screen and (max-width: 520px) {
+            & {
+              top: 40px;
+              transform: translate(-50%,-50%);
+              left: 50%;
+            }
+          }
         }
       }
       &_banket {
@@ -92,6 +163,14 @@
         margin-left: auto;
         width: 230px;
         position: relative;
+        @media screen and (max-width: 1023px) {
+          & {
+            max-width: 550px;
+            width: 100%;
+            margin-top: 50px;
+            justify-content: center;
+          }
+        }
         &:before {
           position: absolute;
           content: '';
@@ -99,6 +178,13 @@
           width: 165px;
           height: 165px;
           background: url(../img/service5.png);
+          @media screen and (max-width: 520px) {
+            & {
+              top: 40px;
+              transform: translate(-50%,-50%);
+              left: 50%;
+            }
+          }
         }
       }
       &_sign {
@@ -107,6 +193,14 @@
         margin-left: auto;
         width: 230px;
         position: relative;
+        @media screen and (max-width: 1023px) {
+          & {
+            max-width: 550px;
+            width: 100%;
+            margin-top: 50px;
+            justify-content: center;
+          }
+        }
         &:before {
           position: absolute;
           content: '';
@@ -114,6 +208,13 @@
           width: 165px;
           height: 165px;
           background: url(../img/service6.png);
+          @media screen and (max-width: 520px) {
+            & {
+              top: 40px;
+              transform: translate(-50%,-50%);
+              left: 50%;
+            }
+          }
         }
       }
       &_artist {
@@ -122,6 +223,14 @@
         margin-left: auto;
         width: 230px;
         position: relative;
+        @media screen and (max-width: 1023px) {
+          & {
+            max-width: 550px;
+            width: 100%;
+            margin-top: 50px;
+            justify-content: center;
+          }
+        }
         &:before {
           position: absolute;
           content: '';
@@ -129,6 +238,13 @@
           width: 165px;
           height: 165px;
           background: url(../img/service7.png);
+          @media screen and (max-width: 520px) {
+            & {
+              top: 40px;
+              transform: translate(-50%,-50%);
+              left: 50%;
+            }
+          }
         }
       }
     }
