@@ -32,23 +32,6 @@ $('.lp-review-slider').slick({
                 dots: true
             }
         },
-        {
-            breakpoint: 1023,
-            settings: {
-                slidesToShow: 2,
-                infinite: true,
-                dots: true
-            }
-        },
-        {
-            breakpoint: 767,
-            settings: {
-                slidesToShow: 1,
-                infinite: true,
-                dots: true,
-                arrows: false,
-            }
-        },
     ]
 });
 

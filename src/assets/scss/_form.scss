@@ -4,10 +4,15 @@
   min-height: 802px;
   padding-top: 80px;
   &-order {
-    @Media screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       & {
         margin-left: 0 !important;
         padding-top: 50px;
+      }
+    }
+    @media screen and (max-width: 1023px) {
+      & {
+        width: 100%;
       }
     }
   }
@@ -55,6 +60,13 @@
           line-height: 24px;
           margin-bottom: 10px;
         }
+      }
+    }
+  }
+  &__submit {
+    @media screen and (max-width: 359px) {
+      & {
+        font-size: 20px !important;
       }
     }
   }
