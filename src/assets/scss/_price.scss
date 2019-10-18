@@ -20,6 +20,11 @@
          flex-wrap: wrap;
        }
     }
+    @media screen and (max-width: 790px) {
+      & {
+        flex-direction: column;
+      }
+    }
     &__item {
       width: 33%;
       border-radius: 10px;
@@ -38,12 +43,25 @@
          }
         &:last-child {
           margin-top: 20px;
+          @media screen and (max-width: 790px) {
+            & {
+              margin-top: 0;
+            }
+          }
         }
         &:first-child {
           margin-right: 10px;
         }
         &.lp-price-row__item {
           margin-left: 10px;
+        }
+      }
+      @media screen and (max-width: 790px) {
+        & {
+          margin-bottom: 15px;
+        }
+        &:last-child {
+          margin-bottom: 0;
         }
       }
       & + & {
