@@ -7,6 +7,11 @@
   margin-top: -25px;
   position: relative;
   z-index: 10;
+  @media screen and (max-device-width: 790px) {
+    & {
+      padding-bottom: 60px;
+    }
+  }
   &__title {
     margin-bottom: 20px;
   }
@@ -23,6 +28,8 @@
     @media screen and (max-width: 790px) {
       & {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
     }
     &__item {
@@ -51,9 +58,19 @@
         }
         &:first-child {
           margin-right: 10px;
+          @media screen and (max-width: 790px) {
+            & {
+              margin-right: 0;
+            }
+          }
         }
         &.lp-price-row__item {
           margin-left: 10px;
+          @media screen and (max-width: 790px) {
+             & {
+               margin-left: 0;
+             }
+          }
         }
       }
       @media screen and (max-width: 790px) {
@@ -62,6 +79,12 @@
         }
         &:last-child {
           margin-bottom: 0;
+        }
+      }
+      @media screen and (max-width: 519px) {
+        & {
+          padding-left: 11px;
+          padding-right: 11px;
         }
       }
       & + & {
@@ -118,9 +141,19 @@
         }
         &_second {
           margin-bottom: 75px;
+          @media screen and (max-width: 790px) {
+            & {
+              margin-bottom: 20px;
+            }
+          }
         }
         &_first {
           margin-bottom: 54px;
+          @media screen and (max-width: 790px) {
+            & {
+              margin-bottom: 20px;
+            }
+          }
         }
       }
       &-rubs {
@@ -143,9 +176,26 @@
     line-height: 26px;
     padding-top: 36px;
     padding-bottom: 26px;
+    @media screen and (max-width: 790px) {
+      max-width: 550px;
+      margin: 0 auto;
+      line-height: 35px;
+    }
+    @media screen and (max-width: 519px) {
+      & {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
     &_phone {
       font-weight: bold;
       font-size: 32px;
+      @media screen and (max-width: 519px) {
+        & {
+          font-size: 24px;
+          line-height: 24px;
+        }
+      }
     }
   }
   &-btn {
