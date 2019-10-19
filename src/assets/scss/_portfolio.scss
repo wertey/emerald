@@ -7,6 +7,11 @@
   &__container {
     max-width: 975px;
     margin: 0 auto;
+    @media screen and (max-width: 1000px) {
+      & {
+        max-width: 100%;
+      }
+    }
   }
   &__title {
     color: #00644b;
@@ -20,11 +25,22 @@
     grid-column-gap: 0;
     grid-template-columns: repeat(8,1fr);
     grid-auto-rows: minmax(115px,1fr);
+    @media screen and (max-width: 767px) {
+      & {
+        display: block;
+      }
+    }
     &__item {
       height: 230px;
       cursor: pointer;
       position: relative;
       overflow: hidden;
+      @media screen and (max-width: 767px) {
+        & {
+          margin-bottom: 20px;
+          padding: 0 5px;
+        }
+      }
       &-info {
         opacity: 0;
         background: $portfolioHoverBg;
@@ -61,35 +77,85 @@
       }
       &_second {
         grid-column: 5 / 7;
+        @media screen and (max-width: 1023px) {
+          & {
+              grid-column: 5 / 9;
+          }
+        }
       }
       &_third {
         grid-column: 7 / 9;
+        @media screen and (max-width: 1023px) {
+          & {
+            grid-column: 1 / 5;
+          }
+        }
       }
       &_fifth {
         grid-column: 1 / 3;
+        @media screen and (max-width: 1023px) {
+          & {
+            grid-column: 5 / 9;
+          }
+        }
       }
       &_sixth {
         grid-column: 3 / 7;
+        @media screen and (max-width: 1023px) {
+          & {
+            grid-column: 1 / 5;
+          }
+        }
       }
       &_seventh {
         grid-column: 7 / 9;
         grid-row: 2 / 4;
         height: 460px;
+        @media screen and (max-width: 1023px) {
+          & {
+            display: none;
+          }
+        }
       }
       &_eighth {
         grid-column: 1 / 5;
+        @media screen and (max-width: 1023px) {
+          & {
+            grid-column: 5 / 9;
+          }
+        }
       }
       &_nineth {
         grid-column: 5 / 7;
+        @media screen and (max-width: 1023px) {
+          & {
+            grid-column: 1 / 5;
+          }
+        }
       }
       &_tenth {
         grid-column: 1 / 5;
+        @media screen and (max-width: 1023px) {
+          & {
+            grid-column: 5 / 9;
+          }
+        }
       }
       &_eleventh {
         grid-column: 5 / 7;
+        @media screen and (max-width: 1023px) {
+          & {
+            grid-column: 1 / 5;
+          }
+        }
       }
       &_twelfth {
         grid-column: 7 / 9;
+        @media screen and (max-width: 1023px) {
+          & {
+            grid-column: 5 / 9;
+          }
+        }
       }
       &:hover &-info {
         opacity: 1;
@@ -105,6 +171,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 767px) {
+      & {
+        flex-direction: column;
+      }
+    }
     &_bold {
       font-weight: bold;
       text-decoration: none;
@@ -117,6 +188,14 @@
     &-img {
       margin-left: 7px;
       margin-right: 8px;
+      @media screen and (max-width: 767px) {
+        & {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
     }
   }
 }

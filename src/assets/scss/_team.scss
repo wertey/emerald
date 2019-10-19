@@ -8,6 +8,12 @@
   position: relative;
   z-index: 9;
   margin-top: -20px;
+  @media screen and (max-width: 1023px) {
+    & {
+      background-size: cover;
+      height: auto;
+    }
+  }
   &__title {
     color: $portfolioHoverBg;
     padding-top: 46px;
@@ -16,6 +22,11 @@
     background: url(../img/line-bg-2.png)no-repeat;
     min-height: 1134px;
     margin-top: -66px;
+    @media screen and (max-width: 1023px) {
+      & {
+        background: none;
+      }
+    }
   }
   &-leader {
     padding-left: 200px;
@@ -23,11 +34,27 @@
     flex-direction: row;
     font-family: 'PTSans Caption',sans-serif;
     color: $portfolioHoverBg;
+    @media screen and (max-width: 1023px) {
+      & {
+        padding-left: 0;
+        padding-top: 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
     &__info {
       padding-top: 35px;
       padding-left: 25px;
       max-width: 460px;
       width: 100%;
+      @media screen and (max-width: 1023px) {
+        & {
+          padding: 20px 20px 20px 40px;
+          max-width: 400px;
+        }
+      }
       &-fio {
         font-weight: bold;
         font-size: 24px;
@@ -59,6 +86,16 @@
     line-height: 100%;
     max-width: 300px;
     text-align: center;
+    @media screen and (max-width: 1023px) {
+      & {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 20px;
+        flex-direction: column;
+      }
+    }
     &__fio {
       font-weight: bold;
       font-size: 20px;
@@ -71,10 +108,25 @@
     &-team1 {
       left: 20%;
       top: 35%;
+      @media screen and (max-width: 1366px) {
+        & {
+          left: 10%;
+        }
+      }
+      @media screen and (max-width: 1023px) {
+        & {
+          left: 2% !important;
+        }
+      }
     }
     &-team2 {
       left: 35%;
       top: 38%;
+      @media screen and (max-width: 1366px) {
+        & {
+          left: 30%;
+        }
+      }
     }
     &-team3 {
       left: 49%;
@@ -83,22 +135,49 @@
     &-team4 {
       left: 63%;
       top: 40%;
+      @media screen and (max-width: 1366px) {
+        & {
+          right: 5%;
+        }
+      }
+
     }
     &-team5 {
       left: 22%;
       top: 69%;
+      @media screen and (max-width: 1366px) {
+        & {
+          left: 5%;
+        }
+      }
     }
     &-team6 {
       left: 35%;
       top: 71%;
+      @media screen and (max-width: 1366px) {
+        & {
+          left: 25%;
+        }
+      }
     }
     &-team7 {
       left: 49%;
       top: 66%;
+      @media screen and (max-width: 1366px) {
+        & {
+          left: 45%;
+        }
+      }
     }
     &-team8 {
       left: 62%;
       top: 72%;
+      @media screen and (max-width: 1366px) {
+        & {
+          right: 5%;
+          top: 65%;
+        }
+      }
     }
     &__img {
       width: 176px;

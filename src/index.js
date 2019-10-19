@@ -27,9 +27,23 @@ $('.lp-review-slider').slick({
         {
             breakpoint: 1199,
             settings: {
-                slidesToShow: 1,
+                slidesToShow: 2,
+                slidesPerRow: 2,
+                dots: true,
+                arrows: true,
+                row: 2,
                 infinite: true,
-                dots: true
+            }
+        },
+        {
+            breakpoint: 1023,
+            settings: {
+                slidesToShow: 1,
+                slidesPerRow: 1,
+                dots: true,
+                arrows: false,
+                row: 1,
+                infinite: true,
             }
         },
     ]
