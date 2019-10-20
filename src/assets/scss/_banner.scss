@@ -3,21 +3,47 @@
   background: url(../img/mainbg.jpg)no-repeat;
   min-height: 750px;
   height: 100%;
-  background-size: 100%;
+  background-size: cover;
   position: relative;
+  background-position: center;
   z-index: 11;
   font-family: 'Kurale', serif;
   &-text {
     display: flex;
     align-items: flex-end;
-    min-height: 670px;
     max-width: 818px;
-    margin: 0 auto 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 10%;
+    @media screen and (max-width: 767px) {
+      & {
+        padding-top: 150px;
+        position: static;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        bottom: 0;
+        transform: translate(0,0);
+      }
+    }
     &__info {
       font-size: 30px;
       text-align: center;
       color: $mainColor;
       line-height: 35px;
+      @media screen and (max-width: 1199px) {
+        & {
+          font-size: 26px;
+          line-height: 30px;
+        }
+      }
+      @media screen and (max-width: 1023px) {
+        & {
+          font-size: 23px;
+        }
+      }
     }
   }
 }
