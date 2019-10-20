@@ -13,6 +13,19 @@
     background: $mainColor;
     padding: 45px 26px 60px;
     color: $portfolioHoverBg;
+    &_btns {
+      min-width: 360px;
+      @media screen and (max-width: 420px) {
+        & {
+          min-width: 320px;
+        }
+      }
+      @media screen and (max-width: 359px) {
+        & {
+          min-width: 280px !important;
+        }
+      }
+    }
     &_contact {
       margin-left: 70px;
       width: 40%;
@@ -21,6 +34,16 @@
       font-size: 26px;
       text-align: center;
       margin-bottom: 30px;
+      @media screen and (max-width: 420px) {
+        & {
+          font-size: 20px;
+        }
+      }
+      @media screen and (max-width: 359px) {
+        & {
+          font-size: 19px;
+        }
+      }
     }
     &-input {
       width: 100%;
@@ -84,6 +107,19 @@
     cursor: pointer;
     box-sizing: border-box;
     border: 1px solid $portfolioHoverBg;
+    @media screen and (max-width: 420px) {
+      & {
+        right: -24px;
+      }
+    }
+    @media screen and (max-width: 359px) {
+      & {
+        font-size: 20px;
+        right: -17px !important;
+        width: 50px;
+        height: 50px;
+      }
+    }
     &:hover {
       background: $mainColor;
       color: $portfolioHoverBg;
