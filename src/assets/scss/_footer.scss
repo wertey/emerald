@@ -111,6 +111,11 @@
                 margin-left: 8px;
               }
             }
+            @media screen and (max-width: 767px) {
+              & {
+                margin-left: 4px;
+              }
+            }
           }
           i {
             font-size: 40px;
@@ -132,6 +137,10 @@
     &_link {
       text-decoration: underline;
       color: $copyrightColorText;
+      @media screen and (max-width: 767px) {}
+      & {
+        display: block;
+      }
     }
   }
 }
