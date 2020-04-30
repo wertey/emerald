@@ -57,7 +57,7 @@
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery-mask-plugin": "^1.14.16",
     "slick-carousel": "^1.8.1"
   }
